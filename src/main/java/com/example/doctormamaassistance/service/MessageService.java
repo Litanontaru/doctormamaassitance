@@ -7,5 +7,5 @@ import java.util.List;
  */
 public interface MessageService {
     List<MessageSummary> getMessagesByChildId(Long childId);
-    MessageDetails getMessageDetails(String messageId);
+    MessageDetail getMessageDetails(String messageId);
 }

@@ -1,6 +1,6 @@
 package com.example.doctormamaassistance.controller;
 
-import com.example.doctormamaassistance.service.MessageDetails;
+import com.example.doctormamaassistance.service.MessageDetail;
 import com.example.doctormamaassistance.service.MessageService;
 import com.example.doctormamaassistance.service.MessageSummary;
 import lombok.RequiredArgsConstructor;
@@ -25,7 +25,7 @@ public class MessageController {
     }
 
     @GetMapping("/children/{child_id}/messages/{message_id}")
-    public MessageDetails getMessageDetails(@PathVariable("child_id") Long childId, @PathVariable("message_id") String messageId) {
+    public MessageDetail getMessageDetails(@PathVariable("child_id") Long childId, @PathVariable("message_id") String messageId) {
         return messageService.getMessageDetails(messageId);
     }
 }

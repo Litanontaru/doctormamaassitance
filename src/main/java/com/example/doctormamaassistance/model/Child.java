@@ -27,4 +27,9 @@ public class Child {
     private String name;
 
     private String state = null;
+
+    public String getAge() {
+        //todo
+        return "Х месяцев";
+    }
 }

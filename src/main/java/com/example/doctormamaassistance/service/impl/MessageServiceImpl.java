@@ -1,5 +1,6 @@
 package com.example.doctormamaassistance.service.impl;
 
+import static java.util.Collections.emptyList;
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toList;
 
@@ -7,7 +8,8 @@ import com.example.doctormamaassistance.model.Child;
 import com.example.doctormamaassistance.repository.ChildRepository;
 import com.example.doctormamaassistance.repository.NoteRepository;
 import com.example.doctormamaassistance.repository.RecommendationRepository;
-import com.example.doctormamaassistance.service.MessageDetails;
+import com.example.doctormamaassistance.service.DescriptionStore;
+import com.example.doctormamaassistance.service.MessageDetail;
 import com.example.doctormamaassistance.service.MessageService;
 import com.example.doctormamaassistance.service.MessageSummary;
 import lombok.RequiredArgsConstructor;
@@ -26,6 +28,7 @@ public class MessageServiceImpl implements MessageService {
     private final ChildRepository childRepository;
     private final NoteRepository noteRepository;
     private final RecommendationRepository recommendationRepository;
+    private final DescriptionStore descriptionStore;
 
     @Override
     public List<MessageSummary> getMessagesByChildId(Long childId) {
@@ -54,7 +57,41 @@ public class MessageServiceImpl implements MessageService {
     }
 
     @Override
-    public MessageDetails getMessageDetails(String messageId) {
+    public MessageDetail getMessageDetails(String messageId) {
+        if (messageId.startsWith("n_")) {
+            return noteRepository.findById(Long.parseLong(messageId.substring(2)))
+                    .map(n -> childRepository
+                            .findById(n.getChildId())
+                            .map(c -> new MessageDetail(
+                                    "n_" + n.getId(),
+                                    c.getName(),
+                                    c.getAge(),
+                                    n.getSummary(),
+                                    n.getNote(),
+                                    n.getCreateDate(),
+                                    emptyList()
+                            ))
+                    )
+                    .orElse(null)
+                    .orElse(null);
+
+        } else if (messageId.startsWith("r_")) {
+            return recommendationRepository.findById(Long.parseLong(messageId.substring(2)))
+                    .map(r -> childRepository
+                            .findById(r.getChildId())
+                            .map(c -> new MessageDetail(
+                                    "r_" + r.getId(),
+                                    c.getName(),
+                                    c.getAge(),
+                                    r.getSummary(),
+                                    r.getNote(),
+                                    r.getCreateDate(),
+                                    descriptionStore.get(r.getTypeId()).build(r)
+                            ))
+                    )
+                    .orElse(null)
+                    .orElse(null);
+        }
         //todo
         return null;
     }
