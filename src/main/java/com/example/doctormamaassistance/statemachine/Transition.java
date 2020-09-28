@@ -7,8 +7,6 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 /**
- * TODO Write JavaDoc please.
- *
  * @author Andrei_Yakushin
  */
 @AllArgsConstructor

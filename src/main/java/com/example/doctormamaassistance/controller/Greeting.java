@@ -1,8 +1,6 @@
 package com.example.doctormamaassistance.controller;
 
 /**
- * TODO Write JavaDoc please.
- *
  * @author Andrei_Yakushin
  */
 public class Greeting {

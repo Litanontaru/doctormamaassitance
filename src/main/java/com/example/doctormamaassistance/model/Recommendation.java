@@ -16,8 +16,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * TODO Write JavaDoc please.
- *
  * @author Andrei_Yakushin
  */
 @Entity
