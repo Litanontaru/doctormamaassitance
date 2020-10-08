@@ -19,13 +19,13 @@ public class GeneratorController {
 
     @GetMapping("/children/{child_id}/generate")
     public String start(@PathVariable("child_id") Long childId) {
-        ruleEngine.generate(childId);
+        ruleEngine.generateScheduledForToday(childId);
         return "ok";
     }
 
-    @GetMapping("/generate")
+    @GetMapping("/generate_scheduled")
     public String forAll() {
-        ruleEngine.generate();
+        ruleEngine.generateScheduledForToday();
         return "ok";
     }
 

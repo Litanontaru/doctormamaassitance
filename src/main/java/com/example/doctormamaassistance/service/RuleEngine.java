@@ -5,7 +5,7 @@ package com.example.doctormamaassistance.service;
  * @author Andrei_Yakushin
  */
 public interface RuleEngine {
-    void generate(Long childId);
+    void generateScheduledForToday(Long childId);
 
-    void generate();
+    void generateScheduledForToday();
 }

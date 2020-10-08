@@ -54,7 +54,7 @@ public class RuleEngineImpl implements RuleEngine {
     }
 
     @Override
-    public void generate(Long childId) {
+    public void generateScheduledForToday(Long childId) {
         childRepository
                 .findById(childId)
                 .ifPresent(machine::generate);
@@ -62,7 +62,7 @@ public class RuleEngineImpl implements RuleEngine {
 
     @Override
     @Scheduled(cron = "0 1 0 * * ?")
-    public void generate() {
+    public void generateScheduledForToday() {
         scheduleService.getTodaySchedule().forEach(this::generate);
     }
 }
