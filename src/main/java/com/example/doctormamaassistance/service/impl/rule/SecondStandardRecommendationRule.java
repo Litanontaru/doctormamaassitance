@@ -1,6 +1,6 @@
 package com.example.doctormamaassistance.service.impl.rule;
 
-import static java.util.Collections.singletonList;
+import static java.util.Arrays.asList;
 
 import com.example.doctormamaassistance.model.Recommendation;
 import com.example.doctormamaassistance.service.Description;
@@ -22,15 +22,15 @@ public class SecondStandardRecommendationRule implements Consumer<Context>, Desc
     public Description getDescription() {
         return new Description(
                 RULE_12_TYPE_ID,
-                Arrays.asList("Расчёт произведён", "Распорядок дня приведён в соответствие с правилом"),
-                singletonList(YES_OPTION)
+                asList("Расчёт произведён", "Распорядок дня приведён в соответствие с правилом"),
+                asList(YES_OPTION, YES_OPTION)
         );
     }
 
     @Override
     public void accept(Context context) {
         context.addMessage(new Recommendation()
-                .init(1)
+                .init(getDescription().getItems().size())
                 .setTypeId(RULE_12_TYPE_ID)
                 .setSummary("Проверить правило 12 часов")
                 .setNote("todo"));
