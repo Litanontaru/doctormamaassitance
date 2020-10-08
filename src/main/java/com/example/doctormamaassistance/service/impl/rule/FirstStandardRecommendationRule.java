@@ -29,7 +29,7 @@ public class FirstStandardRecommendationRule implements Consumer<Context>, Descr
     @Override
     public void accept(Context context) {
         context.addMessage(new Recommendation()
-                .init(1)
+                .init(getDescription().getItems().size())
                 .setTypeId(FIX_GET_UP_TYPE_ID)
                 .setSummary("Зафиксировать время подъёма")
                 .setNote("todo"));
