@@ -1,8 +1,7 @@
-package com.example.doctormamaassistance.statemachine.builder;
+package com.example.doctormamaassistance.core.statemachine.builder;
 
-import com.example.doctormamaassistance.statemachine.Config;
-import com.example.doctormamaassistance.statemachine.StateMachine;
-import com.example.doctormamaassistance.statemachine.Transition;
+import com.example.doctormamaassistance.core.statemachine.Config;
+import com.example.doctormamaassistance.core.statemachine.Transition;
 import lombok.RequiredArgsConstructor;
 
 import java.util.ArrayList;

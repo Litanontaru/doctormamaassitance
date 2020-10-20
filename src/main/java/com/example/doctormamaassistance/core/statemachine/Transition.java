@@ -1,4 +1,4 @@
-package com.example.doctormamaassistance.statemachine;
+package com.example.doctormamaassistance.core.statemachine;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

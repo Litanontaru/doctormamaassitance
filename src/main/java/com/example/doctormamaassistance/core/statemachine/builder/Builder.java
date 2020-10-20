@@ -1,6 +1,6 @@
-package com.example.doctormamaassistance.statemachine.builder;
+package com.example.doctormamaassistance.core.statemachine.builder;
 
-import com.example.doctormamaassistance.statemachine.Config;
+import com.example.doctormamaassistance.core.statemachine.Config;
 
 /**
  * @author Andrei_Yakushin

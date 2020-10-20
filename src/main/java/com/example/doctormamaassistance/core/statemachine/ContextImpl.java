@@ -1,4 +1,4 @@
-package com.example.doctormamaassistance.statemachine;
+package com.example.doctormamaassistance.core.statemachine;
 
 import com.example.doctormamaassistance.core.model.Child;
 import com.example.doctormamaassistance.core.model.MessageLike;

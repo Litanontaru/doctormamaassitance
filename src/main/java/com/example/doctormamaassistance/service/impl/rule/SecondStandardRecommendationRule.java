@@ -5,7 +5,7 @@ import static java.util.Arrays.asList;
 import com.example.doctormamaassistance.core.model.Recommendation;
 import com.example.doctormamaassistance.service.Description;
 import com.example.doctormamaassistance.service.impl.DescriptionProvider;
-import com.example.doctormamaassistance.statemachine.Context;
+import com.example.doctormamaassistance.core.statemachine.Context;
 import org.springframework.stereotype.Component;
 
 import java.util.function.Consumer;

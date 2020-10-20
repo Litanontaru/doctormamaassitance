@@ -1,6 +1,6 @@
-package com.example.doctormamaassistance.statemachine.builder;
+package com.example.doctormamaassistance.core.statemachine.builder;
 
-import com.example.doctormamaassistance.statemachine.Context;
+import com.example.doctormamaassistance.core.statemachine.Context;
 
 import java.util.function.Consumer;
 import java.util.function.Predicate;

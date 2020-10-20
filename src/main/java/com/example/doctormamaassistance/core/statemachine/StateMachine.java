@@ -1,4 +1,4 @@
-package com.example.doctormamaassistance.statemachine;
+package com.example.doctormamaassistance.core.statemachine;
 
 import static java.util.stream.Collectors.toList;
 

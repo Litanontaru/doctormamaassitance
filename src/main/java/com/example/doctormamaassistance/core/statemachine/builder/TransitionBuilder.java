@@ -1,7 +1,7 @@
-package com.example.doctormamaassistance.statemachine.builder;
+package com.example.doctormamaassistance.core.statemachine.builder;
 
-import com.example.doctormamaassistance.statemachine.Context;
-import com.example.doctormamaassistance.statemachine.Transition;
+import com.example.doctormamaassistance.core.statemachine.Context;
+import com.example.doctormamaassistance.core.statemachine.Transition;
 import lombok.Getter;
 import lombok.Setter;
 

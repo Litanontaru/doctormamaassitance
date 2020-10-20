@@ -1,7 +1,7 @@
 package com.example.doctormamaassistance.service.impl.rule;
 
 import com.example.doctormamaassistance.core.model.Note;
-import com.example.doctormamaassistance.statemachine.Context;
+import com.example.doctormamaassistance.core.statemachine.Context;
 import org.springframework.stereotype.Component;
 
 import java.util.function.Consumer;
