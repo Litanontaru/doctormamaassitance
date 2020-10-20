@@ -1,6 +1,6 @@
-package com.example.doctormamaassistance.service.impl;
+package com.example.doctormamaassistance.core.service.impl;
 
-import com.example.doctormamaassistance.service.MessageStore;
+import com.example.doctormamaassistance.core.service.MessageStore;
 import com.example.doctormamaassistance.core.model.MessageLike;
 import com.example.doctormamaassistance.core.model.Note;
 import com.example.doctormamaassistance.core.model.Recommendation;

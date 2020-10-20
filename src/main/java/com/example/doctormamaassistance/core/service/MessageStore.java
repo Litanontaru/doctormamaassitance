@@ -1,4 +1,4 @@
-package com.example.doctormamaassistance.service;
+package com.example.doctormamaassistance.core.service;
 
 import com.example.doctormamaassistance.core.model.MessageLike;
 

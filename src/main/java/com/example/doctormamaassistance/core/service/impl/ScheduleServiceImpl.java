@@ -1,4 +1,4 @@
-package com.example.doctormamaassistance.service.impl;
+package com.example.doctormamaassistance.core.service.impl;
 
 
 import static java.util.stream.Collectors.toList;
@@ -6,7 +6,7 @@ import static java.util.stream.Collectors.toList;
 import com.example.doctormamaassistance.core.model.Child;
 import com.example.doctormamaassistance.core.model.ScheduleAction;
 import com.example.doctormamaassistance.core.repository.ScheduleActioneRepository;
-import com.example.doctormamaassistance.service.ScheduleService;
+import com.example.doctormamaassistance.core.service.ScheduleService;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Autowired;

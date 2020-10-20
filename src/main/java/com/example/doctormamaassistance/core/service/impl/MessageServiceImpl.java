@@ -1,4 +1,4 @@
-package com.example.doctormamaassistance.service.impl;
+package com.example.doctormamaassistance.core.service.impl;
 
 import static java.util.Collections.emptyList;
 import static java.util.Comparator.comparing;
@@ -8,10 +8,10 @@ import com.example.doctormamaassistance.core.model.Child;
 import com.example.doctormamaassistance.core.repository.ChildRepository;
 import com.example.doctormamaassistance.core.repository.NoteRepository;
 import com.example.doctormamaassistance.core.repository.RecommendationRepository;
-import com.example.doctormamaassistance.service.DescriptionStore;
-import com.example.doctormamaassistance.service.MessageDetail;
-import com.example.doctormamaassistance.service.MessageService;
-import com.example.doctormamaassistance.service.MessageSummary;
+import com.example.doctormamaassistance.core.service.DescriptionStore;
+import com.example.doctormamaassistance.core.service.MessageDetail;
+import com.example.doctormamaassistance.core.service.MessageService;
+import com.example.doctormamaassistance.core.service.MessageSummary;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

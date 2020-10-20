@@ -1,8 +1,8 @@
-package com.example.doctormamaassistance.service.impl;
+package com.example.doctormamaassistance.core.service;
 
 import static java.util.Collections.singletonList;
 
-import com.example.doctormamaassistance.service.Description;
+import com.example.doctormamaassistance.core.service.Description;
 
 import java.util.Arrays;
 import java.util.List;

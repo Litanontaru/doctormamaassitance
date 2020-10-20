@@ -1,10 +1,10 @@
-package com.example.doctormamaassistance.service.impl.rule;
+package com.example.doctormamaassistance.demo.service.impl.rule;
 
 import static java.util.Collections.*;
 
 import com.example.doctormamaassistance.core.model.Recommendation;
-import com.example.doctormamaassistance.service.Description;
-import com.example.doctormamaassistance.service.impl.DescriptionProvider;
+import com.example.doctormamaassistance.core.service.Description;
+import com.example.doctormamaassistance.core.service.DescriptionProvider;
 import com.example.doctormamaassistance.core.statemachine.Context;
 import org.springframework.stereotype.Component;
 

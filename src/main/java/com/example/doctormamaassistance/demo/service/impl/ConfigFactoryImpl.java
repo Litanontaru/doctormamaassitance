@@ -1,12 +1,12 @@
-package com.example.doctormamaassistance.service.impl;
+package com.example.doctormamaassistance.demo.service.impl;
 
 import com.example.doctormamaassistance.core.statemachine.Config;
 import com.example.doctormamaassistance.core.statemachine.Context;
 import com.example.doctormamaassistance.core.statemachine.builder.Builder;
-import com.example.doctormamaassistance.service.ConfigFactory;
-import com.example.doctormamaassistance.service.impl.rule.FirstStandardRecommendationRule;
-import com.example.doctormamaassistance.service.impl.rule.SecondStandardRecommendationRule;
-import com.example.doctormamaassistance.service.impl.rule.StartAssistanceRule;
+import com.example.doctormamaassistance.core.service.ConfigFactory;
+import com.example.doctormamaassistance.demo.service.impl.rule.FirstStandardRecommendationRule;
+import com.example.doctormamaassistance.demo.service.impl.rule.SecondStandardRecommendationRule;
+import com.example.doctormamaassistance.demo.service.impl.rule.StartAssistanceRule;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package com.example.doctormamaassistance.service.impl.rule;
+package com.example.doctormamaassistance.demo.service.impl.rule;
 
 import com.example.doctormamaassistance.core.model.Note;
 import com.example.doctormamaassistance.core.statemachine.Context;

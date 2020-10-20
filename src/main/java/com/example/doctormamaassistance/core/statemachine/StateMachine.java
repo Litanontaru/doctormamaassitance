@@ -3,8 +3,8 @@ package com.example.doctormamaassistance.core.statemachine;
 import static java.util.stream.Collectors.toList;
 
 import com.example.doctormamaassistance.core.model.Child;
-import com.example.doctormamaassistance.service.MessageStore;
-import com.example.doctormamaassistance.service.ScheduleService;
+import com.example.doctormamaassistance.core.service.MessageStore;
+import com.example.doctormamaassistance.core.service.ScheduleService;
 import lombok.AllArgsConstructor;
 
 import java.util.List;

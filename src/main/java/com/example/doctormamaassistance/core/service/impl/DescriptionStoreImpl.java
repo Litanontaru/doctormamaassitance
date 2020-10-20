@@ -1,7 +1,8 @@
-package com.example.doctormamaassistance.service.impl;
+package com.example.doctormamaassistance.core.service.impl;
 
-import com.example.doctormamaassistance.service.Description;
-import com.example.doctormamaassistance.service.DescriptionStore;
+import com.example.doctormamaassistance.core.service.Description;
+import com.example.doctormamaassistance.core.service.DescriptionProvider;
+import com.example.doctormamaassistance.core.service.DescriptionStore;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
