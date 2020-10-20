@@ -32,16 +32,12 @@ public class ScheduleServiceImpl implements ScheduleService {
     public void schedule(Child child, List<Integer> days) {
         LocalDate now = LocalDate.now();
         days.stream()
-                .map(d -> new ScheduleAction(child.getId(), now.plusDays(d)))
+                .map(d -> new ScheduleAction(child, now.plusDays(d)))
                 .forEach(repository::save);
     }
 
     @Override
-    public List<Long> getTodaySchedule() {
-        return repository
-                .findByWhen(LocalDate.now().plusDays(shift))
-                .stream()
-                .map(ScheduleAction::getChildId)
-                .collect(toList());
+    public List<ScheduleAction> getTodaySchedule() {
+        return repository.findByWhen(LocalDate.now().plusDays(shift));
     }
 }

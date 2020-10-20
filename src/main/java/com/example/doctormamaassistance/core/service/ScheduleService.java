@@ -1,6 +1,7 @@
 package com.example.doctormamaassistance.core.service;
 
 import com.example.doctormamaassistance.core.model.Child;
+import com.example.doctormamaassistance.core.model.ScheduleAction;
 
 import java.util.List;
 
@@ -10,7 +11,7 @@ import java.util.List;
 public interface ScheduleService {
     void schedule(Child child, List<Integer> days);
 
-    List<Long> getTodaySchedule();
+    List<ScheduleAction> getTodaySchedule();
 
     void setShift(int shift);
 }

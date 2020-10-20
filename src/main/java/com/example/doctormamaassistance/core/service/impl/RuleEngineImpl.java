@@ -1,5 +1,6 @@
 package com.example.doctormamaassistance.core.service.impl;
 
+import com.example.doctormamaassistance.core.model.ScheduleAction;
 import com.example.doctormamaassistance.core.repository.ChildRepository;
 import com.example.doctormamaassistance.core.statemachine.StateMachine;
 import com.example.doctormamaassistance.core.service.MessageStore;
@@ -42,6 +43,11 @@ public class RuleEngineImpl implements RuleEngine {
     @Override
     @Scheduled(cron = "0 1 0 * * ?")
     public void generateScheduledForToday() {
-        scheduleService.getTodaySchedule().forEach(this::generateScheduledForToday);
+        for (ScheduleAction action : scheduleService.getTodaySchedule()) {
+            childRepository
+                    .findById(action.getId())
+                    .filter(c -> action.getExpectedState().equals(c.getState()))
+                    .ifPresent(machine::generate);
+        }
     }
 }

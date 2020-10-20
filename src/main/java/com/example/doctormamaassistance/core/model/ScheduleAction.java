@@ -28,8 +28,11 @@ public class ScheduleAction {
     @Column(name = "local_date", columnDefinition = "DATE")
     private LocalDate when;
 
-    public ScheduleAction(Long childId, LocalDate when) {
-        this.childId = childId;
+    private String expectedState;
+
+    public ScheduleAction(Child child, LocalDate when) {
+        this.childId = child.getId();
         this.when = when;
+        this.expectedState = child.getState();
     }
 }
