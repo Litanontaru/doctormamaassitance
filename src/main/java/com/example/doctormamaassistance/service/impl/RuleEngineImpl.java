@@ -63,6 +63,6 @@ public class RuleEngineImpl implements RuleEngine {
     @Override
     @Scheduled(cron = "0 1 0 * * ?")
     public void generateScheduledForToday() {
-        scheduleService.getTodaySchedule().forEach(this::generate);
+        scheduleService.getTodaySchedule().forEach(this::generateScheduledForToday);
     }
 }
