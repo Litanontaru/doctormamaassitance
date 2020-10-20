@@ -1,7 +1,7 @@
 package com.example.doctormamaassistance.statemachine;
 
-import com.example.doctormamaassistance.model.Child;
-import com.example.doctormamaassistance.model.MessageLike;
+import com.example.doctormamaassistance.core.model.Child;
+import com.example.doctormamaassistance.core.model.MessageLike;
 
 /**
  * @author Andrei_Yakushin

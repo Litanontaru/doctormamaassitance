@@ -1,7 +1,7 @@
-package com.example.doctormamaassistance.controller;
+package com.example.doctormamaassistance.demo.controller;
 
-import com.example.doctormamaassistance.model.Child;
-import com.example.doctormamaassistance.repository.ChildRepository;
+import com.example.doctormamaassistance.core.model.Child;
+import com.example.doctormamaassistance.core.repository.ChildRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

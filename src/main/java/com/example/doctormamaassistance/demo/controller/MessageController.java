@@ -1,4 +1,4 @@
-package com.example.doctormamaassistance.controller;
+package com.example.doctormamaassistance.demo.controller;
 
 import com.example.doctormamaassistance.service.MessageDetail;
 import com.example.doctormamaassistance.service.MessageService;

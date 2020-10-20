@@ -1,4 +1,4 @@
-package com.example.doctormamaassistance.model;
+package com.example.doctormamaassistance.core.model;
 
 import javax.persistence.Entity;
 

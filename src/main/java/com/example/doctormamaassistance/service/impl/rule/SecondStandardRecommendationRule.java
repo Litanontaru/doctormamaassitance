@@ -2,13 +2,12 @@ package com.example.doctormamaassistance.service.impl.rule;
 
 import static java.util.Arrays.asList;
 
-import com.example.doctormamaassistance.model.Recommendation;
+import com.example.doctormamaassistance.core.model.Recommendation;
 import com.example.doctormamaassistance.service.Description;
 import com.example.doctormamaassistance.service.impl.DescriptionProvider;
 import com.example.doctormamaassistance.statemachine.Context;
 import org.springframework.stereotype.Component;
 
-import java.util.Arrays;
 import java.util.function.Consumer;
 
 /**

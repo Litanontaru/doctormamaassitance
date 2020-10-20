@@ -1,6 +1,6 @@
 package com.example.doctormamaassistance.service;
 
-import com.example.doctormamaassistance.model.Recommendation;
+import com.example.doctormamaassistance.core.model.Recommendation;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

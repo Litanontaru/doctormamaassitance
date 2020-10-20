@@ -1,4 +1,4 @@
-package com.example.doctormamaassistance.controller;
+package com.example.doctormamaassistance.demo.controller;
 
 /**
  * @author Andrei_Yakushin

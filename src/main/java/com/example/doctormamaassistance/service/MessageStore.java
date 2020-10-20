@@ -1,6 +1,6 @@
 package com.example.doctormamaassistance.service;
 
-import com.example.doctormamaassistance.model.MessageLike;
+import com.example.doctormamaassistance.core.model.MessageLike;
 
 /**
  * @author Andrei_Yakushin

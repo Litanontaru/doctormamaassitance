@@ -3,9 +3,9 @@ package com.example.doctormamaassistance.service.impl;
 
 import static java.util.stream.Collectors.toList;
 
-import com.example.doctormamaassistance.model.Child;
-import com.example.doctormamaassistance.model.ScheduleAction;
-import com.example.doctormamaassistance.repository.ScheduleActioneRepository;
+import com.example.doctormamaassistance.core.model.Child;
+import com.example.doctormamaassistance.core.model.ScheduleAction;
+import com.example.doctormamaassistance.core.repository.ScheduleActioneRepository;
 import com.example.doctormamaassistance.service.ScheduleService;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;

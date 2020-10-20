@@ -1,6 +1,6 @@
 package com.example.doctormamaassistance.service;
 
-import com.example.doctormamaassistance.model.Child;
+import com.example.doctormamaassistance.core.model.Child;
 
 import java.util.List;
 

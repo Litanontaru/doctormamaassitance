@@ -4,10 +4,10 @@ import static java.util.Collections.emptyList;
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toList;
 
-import com.example.doctormamaassistance.model.Child;
-import com.example.doctormamaassistance.repository.ChildRepository;
-import com.example.doctormamaassistance.repository.NoteRepository;
-import com.example.doctormamaassistance.repository.RecommendationRepository;
+import com.example.doctormamaassistance.core.model.Child;
+import com.example.doctormamaassistance.core.repository.ChildRepository;
+import com.example.doctormamaassistance.core.repository.NoteRepository;
+import com.example.doctormamaassistance.core.repository.RecommendationRepository;
 import com.example.doctormamaassistance.service.DescriptionStore;
 import com.example.doctormamaassistance.service.MessageDetail;
 import com.example.doctormamaassistance.service.MessageService;

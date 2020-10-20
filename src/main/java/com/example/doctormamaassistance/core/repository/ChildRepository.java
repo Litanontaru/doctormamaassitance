@@ -1,6 +1,6 @@
-package com.example.doctormamaassistance.repository;
+package com.example.doctormamaassistance.core.repository;
 
-import com.example.doctormamaassistance.model.Child;
+import com.example.doctormamaassistance.core.model.Child;
 import org.springframework.data.repository.CrudRepository;
 
 /**

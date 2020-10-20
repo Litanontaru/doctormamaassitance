@@ -1,6 +1,6 @@
 package com.example.doctormamaassistance.service.impl;
 
-import com.example.doctormamaassistance.repository.ChildRepository;
+import com.example.doctormamaassistance.core.repository.ChildRepository;
 import com.example.doctormamaassistance.service.MessageStore;
 import com.example.doctormamaassistance.service.RuleEngine;
 import com.example.doctormamaassistance.service.ScheduleService;

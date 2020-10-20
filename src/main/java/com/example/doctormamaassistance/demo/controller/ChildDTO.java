@@ -1,6 +1,6 @@
-package com.example.doctormamaassistance.controller;
+package com.example.doctormamaassistance.demo.controller;
 
-import com.example.doctormamaassistance.model.Child;
+import com.example.doctormamaassistance.core.model.Child;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

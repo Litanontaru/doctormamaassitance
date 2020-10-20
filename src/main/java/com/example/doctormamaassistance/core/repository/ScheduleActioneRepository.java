@@ -1,6 +1,6 @@
-package com.example.doctormamaassistance.repository;
+package com.example.doctormamaassistance.core.repository;
 
-import com.example.doctormamaassistance.model.ScheduleAction;
+import com.example.doctormamaassistance.core.model.ScheduleAction;
 import org.springframework.data.repository.CrudRepository;
 
 import java.time.LocalDate;

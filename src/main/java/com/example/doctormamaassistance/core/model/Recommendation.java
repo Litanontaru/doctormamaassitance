@@ -1,4 +1,4 @@
-package com.example.doctormamaassistance.model;
+package com.example.doctormamaassistance.core.model;
 
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.IntStream.range;

@@ -1,11 +1,11 @@
 package com.example.doctormamaassistance.service.impl;
 
 import com.example.doctormamaassistance.service.MessageStore;
-import com.example.doctormamaassistance.model.MessageLike;
-import com.example.doctormamaassistance.model.Note;
-import com.example.doctormamaassistance.model.Recommendation;
-import com.example.doctormamaassistance.repository.NoteRepository;
-import com.example.doctormamaassistance.repository.RecommendationRepository;
+import com.example.doctormamaassistance.core.model.MessageLike;
+import com.example.doctormamaassistance.core.model.Note;
+import com.example.doctormamaassistance.core.model.Recommendation;
+import com.example.doctormamaassistance.core.repository.NoteRepository;
+import com.example.doctormamaassistance.core.repository.RecommendationRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

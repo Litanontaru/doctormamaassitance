@@ -1,4 +1,4 @@
-package com.example.doctormamaassistance.controller;
+package com.example.doctormamaassistance.demo.controller;
 
 import com.example.doctormamaassistance.service.RuleEngine;
 import com.example.doctormamaassistance.service.ScheduleService;

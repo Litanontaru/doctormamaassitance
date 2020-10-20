@@ -2,7 +2,7 @@ package com.example.doctormamaassistance.statemachine;
 
 import static java.util.stream.Collectors.toList;
 
-import com.example.doctormamaassistance.model.Child;
+import com.example.doctormamaassistance.core.model.Child;
 import com.example.doctormamaassistance.service.MessageStore;
 import com.example.doctormamaassistance.service.ScheduleService;
 import lombok.AllArgsConstructor;

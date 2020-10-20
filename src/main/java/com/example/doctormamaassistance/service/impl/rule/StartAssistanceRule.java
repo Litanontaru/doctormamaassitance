@@ -1,6 +1,6 @@
 package com.example.doctormamaassistance.service.impl.rule;
 
-import com.example.doctormamaassistance.model.Note;
+import com.example.doctormamaassistance.core.model.Note;
 import com.example.doctormamaassistance.statemachine.Context;
 import org.springframework.stereotype.Component;
 
