@@ -14,7 +14,7 @@ import java.util.stream.IntStream;
 @AllArgsConstructor
 @Getter
 public class Description {
-    private Long typeId;
+    private final Long typeId;
     private final List<String> items;
     private final List<List<String>> itemOptions;
 
