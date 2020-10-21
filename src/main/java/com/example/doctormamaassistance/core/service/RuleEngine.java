@@ -7,5 +7,6 @@ package com.example.doctormamaassistance.core.service;
 public interface RuleEngine {
     void generateScheduledForToday(Long childId);
 
+    @Deprecated
     void generateScheduledForToday();
 }
