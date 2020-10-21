@@ -13,5 +13,6 @@ public interface ScheduleService {
 
     List<ScheduleAction> getTodaySchedule();
 
+    @Deprecated
     void setShift(int shift);
 }
